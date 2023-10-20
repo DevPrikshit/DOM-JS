@@ -1,0 +1,32 @@
+DOM means document object model
+1> how to acess obj
+  ans> document.getElementById('title')
+2> for class use classname not class
+3> for setting attributes use this 
+   document.getElementById('title').setAttribute('class','test')
+4> for style use this
+  obj.style.backgroundColor='orange'
+5> for content
+  use idname.innertext > show code only visible to reader on screen
+    title.textcontent > jo not visible hota wo bi show
+  title.innerhtml > pura code bata deta hai
+6> another query selector
+  document.querySelector('h1')//first h1 dega
+  document.querySelector('#title') //id ko # pr class ko .class
+7> queryselectorall
+  we get nodelist > but not array
+  myh1[0].style.bgcolor
+8> node list for each
+  templist.forEach( function(li) {
+    li.style.backgroundColor='green'
+    
+})
+9>document.getElementsByClassName('list-item')
+  //html collection
+  const myhtmlcollection=document.getElementsByClassName('list-item')
+  Array.from(myhtmlcollection) // convert html collection in array
+  const myarray=Array.from(myhtmlcollection)
+  myarray.forEach(function (li) {
+    li.style.color='orange'
+})
+  
